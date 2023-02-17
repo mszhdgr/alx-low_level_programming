@@ -7,14 +7,14 @@
 
 int main(void)
 {
-	char a;
-	short b;
-	int c;
-	long d;
-	long long e;
-	float f;
-	double g;
-	long double h;
+char a;
+short b;
+int c;
+long d;
+long long e;
+float f;
+double g;
+long double h;
 
 printf("size of a char: %lu byte(s)\n", (unsigned long) sizeof(a));
 printf("size of a short: %lu byte(s)\n", (unsigned long) sizeof(b));
