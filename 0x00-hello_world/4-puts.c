@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * Main -a programm that prints a line of puts function
+ * main -a programm that prints a line of puts function
  *
- * Retur:(0) (successful)
+ * Return:(0) (successful)
  */
+
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
