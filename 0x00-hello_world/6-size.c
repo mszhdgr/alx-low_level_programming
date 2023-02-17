@@ -7,14 +7,23 @@
 
 int main(void)
 {
-printf("Size of char: %ld byte\n", sizeof(char));
-printf("Size of short: %ld bytes\n", sizeof(short));
-printf("Size of int: %ld bytes\n", sizeof(int));
-printf("Size of long: %ld bytes\n", sizeof(long));
-printf("Size of long long: %ld bytes\n", sizeof(long long));
-printf("Size of float: %ld bytes\n", sizeof(float));
-printf("Size of double: %ld bytes\n", sizeof(double));
-printf("Size of long double: %ld bytes\n", sizeof(long double));
+char a;
+short b;
+int c;
+long d;
+long long e;
+float f;
+double g;
+long double h;
+
+printf("size of a char: %lu byte(s)\n", (unsigned long) sizeof(a));
+printf("size of a short: %lu byte(s)\n", (unsigned long) sizeof(b));
+printf("size of an int: %lu byte(s)\n", (unsigned long) sizeof(c));
+printf("size of a long: %lu byte(s)\n", (unsigned long) sizeof(d));
+printf("size of a long long: %lu byte(s)\n", (unsigned long) sizeof(e));
+printf("size of a float: %lu byte(s)\n", (unsigned long) sizeof(f));
+printf("size of a double: %lu byte(s)\n", (unsigned long) sizeof(g));
+printf("size of a long double: %lu byte(s)\n", (unsigned long) sizeof(h));
 
 return (0);
 }
