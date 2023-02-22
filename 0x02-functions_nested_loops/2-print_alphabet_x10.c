@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * main -a function that prints 10 times the alphabet,
- * in lowercase
+ * main -afunction that prints 10xlcase alphabets
  *
  * Return: void
  */
