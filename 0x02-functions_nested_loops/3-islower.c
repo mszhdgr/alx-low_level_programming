@@ -2,7 +2,7 @@
 /**
  * main -a function that checks for lowercase character
  *
- * Return: 1 if c is lowercase Returns: 0 otherwise
+ * Return: 1 if c is lowercase or 0 otherwise
  */
 int _islower(int c)
 {
@@ -11,5 +11,4 @@ int _islower(int c)
 	return (1);
 	}
 	return (0);
-
 }
