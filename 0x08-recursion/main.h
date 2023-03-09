@@ -23,4 +23,6 @@ int wildcmp(char *s1, char *s2);
 
 int find_sqrt(int n, int i);
 
+int check_prime(int n, int i);
+
 #endif
