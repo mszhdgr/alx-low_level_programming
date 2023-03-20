@@ -1,22 +1,22 @@
-#ifndef DOG_H_
-#define DOG_H_
+#ifndef DOG_H
+#define DOG_H
+
 /**
- * struct dog - it is a structure that stores dogs info
- *
- * @name: the name of the dog
- * @age: the age of the dog
- * @owner: the owner of the dog
- *
+ * struct dog - A new type describing a dog.
+ * @name: The name of the dog.
+ * @age: The age of the dog.
+ * @owner: The owner of the dog.
  */
-typedef struct dog
+struct dog
 {
-
-char *name[20];
-float age;
-char *owner[20];
-
+	char *name;
+	float age;
+	char *owner;
 };
 
+/**
+ * dog_t - Typedef for struct dog
+ */
 typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
