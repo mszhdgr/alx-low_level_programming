@@ -1,5 +1,5 @@
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef DOG_H_
+#define DOG_H_
 /**
  * struct dog - it is a structure that stores dogs info
  *
@@ -15,5 +15,13 @@ char *name[20];
 float age;
 char *owner[20];
 
-} dog;
+};
+
+typedef struct dog dog_t;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+
 #endif
