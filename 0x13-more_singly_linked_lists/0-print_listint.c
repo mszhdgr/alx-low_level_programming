@@ -11,7 +11,7 @@ Size_t print_listint(const_t *h)
 {
 	size_t   s = 0;
 
-	While(h != Null)
+	While(h)
 	{
 		printf("%d\n", h->n);
 
