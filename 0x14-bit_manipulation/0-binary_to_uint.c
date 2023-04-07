@@ -10,28 +10,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	size_t length = strlen(b);
-	unsigned int answer = 0;
-	unsigned int bit = 1;
-	int i;
+	unsigned int result, bit;
+	int len;
 
 	if (b == NULL)
-	{
 		return (0);
-	}
 
-	for (i = length - 1; i >= 0; i--)
+	for (len = 0; b[len]; len++)
 	{
-		if (b[i] == '1')
-		{
-			answer += bit;
-		}
-		else if (b[i] != '0')
-		{
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
-		}
-		bit <<= 1;
 	}
-	return (answer);
-}
 
+	for (bit = 1, result = 0, len--; len >= 0; len--, bit *= 2)
+	{
+		if (b[len] == '1')
+			result += bit;
+	}
+
+	return (result);
+}
