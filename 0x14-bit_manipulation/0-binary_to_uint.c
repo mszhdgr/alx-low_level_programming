@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 #include <string.h>
 /**
  * binary_to_uint - a function that converts a binary
