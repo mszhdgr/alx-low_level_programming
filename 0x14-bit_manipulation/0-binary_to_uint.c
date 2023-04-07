@@ -10,17 +10,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+	size_t length = strlen(b);
+	unsigned int answer = 0;
+	unsigned int bit = 1;
+	int i;
+
 	if (b == NULL)
 	{
 		return (0);
 	}
-
-	size_t length;
-	unsigned int answer, bit, i;
-
-	answer = 0;
-	bit = 1;
-	length = strlen(b);
 
 	for (i = length - 1; i >= 0; i--)
 	{
@@ -34,5 +32,6 @@ unsigned int binary_to_uint(const char *b)
 		}
 		bit <<= 1;
 	}
-	return (answer)
+	return (answer);
 }
+
